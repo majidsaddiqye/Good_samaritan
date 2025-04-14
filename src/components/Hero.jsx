@@ -57,7 +57,7 @@ const Hero = () => {
         {slides.map((slide, index) => (
           <div key={index} className="relative">
             {/* Background gradient */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0d1540] via-[#1e3060] to-[#3d91a3] opacity-90"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#f07d92] via-[#793f49] to-[#0d1540] opacity-90"></div>
             
             {/* Background image */}
             <div className="absolute inset-0 z-0">
@@ -71,8 +71,8 @@ const Hero = () => {
               <div className="flex flex-col md:flex-row items-center justify-between">
                 {/* Text Box */}
                 <div className="w-full md:w-2/5 z-10 mb-8 md:mb-0">
-                  <div className="bg-white p-8 md:p-10 rounded-lg shadow-xl">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#0d1540] mb-4">
+                  <div className="bg-[#f3f1ec] p-8 md:p-10 rounded-lg shadow-xl">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#bd0f2f] mb-4">
                       {slide.heading}
                     </h2>
                     <p className="text-[#0d1540] mb-6">
@@ -80,7 +80,7 @@ const Hero = () => {
                     </p>
                     <Link 
                       to={slide.buttonLink}
-                      className="inline-block border-2 border-[#0d1540] text-[#0d1540] font-semibold py-2 px-6 rounded-full hover:bg-[#0d1540] hover:text-white transition-all duration-300"
+                      className="inline-block border-2 border-[#bd0f2f] text-[#bd0f2f] font-semibold py-2 px-6 rounded-full hover:bg-[#bd0f2f] hover:text-white transition-all duration-300"
                     >
                       {slide.buttonText}
                     </Link>

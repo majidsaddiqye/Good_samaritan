@@ -45,22 +45,19 @@ const ServicesPrograms = () => {
       title: "Prison Visits",
       description:
         "Our Prison Visits program provides spiritual nourishment and material support to inmates, helping them find hope and redemption. We organize regular visits to prisons like Luzira, offering prayers, counseling, and essentials to inmates and their families.",
-      image:
-        prison,
+      image: prison,
     },
     {
       title: "Jubilee Pilgrimage",
       description:
         "The Jubilee Pilgrimage brings the community together for spiritual journeys to sacred sites like Namugongo Martyrs Shrine. These pilgrimages strengthen faith, foster unity, and provide an opportunity for reflection and prayer.",
-      image:
-        jubilee,
+      image: jubilee,
     },
     {
       title: "Needy Home Visits",
       description:
         "Through Needy Home Visits, we reach out to the most vulnerable in our parishes, delivering food, clothing, and prayers. Volunteers visit homes to offer support, ensuring no one is left behind in our mission of mercy.",
-      image:
-        img1,
+      image: img1,
     },
   ];
 
@@ -82,35 +79,35 @@ const ServicesPrograms = () => {
   return (
     <main className="flex-grow">
       {/* Hero Section */}
-      <section className="bg-blue-900 text-white py-16">
+      <section className="bg-red-800 text-cream-50 py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Services & Programs</h1>
-          <p className="text-xl max-w-2xl mx-auto">
-            Discover how we serve the community through our impactful programs.
+          <h1 className="text-4xl md:text-5xl font-bold font-serif mb-4">Services & Programs</h1>
+          <p className="text-xl max-w-2xl mx-auto font-sans">
+            Discover how our Good Samaritans serve the community with compassion and faith.
           </p>
         </div>
       </section>
 
       {/* Key Programs Slider */}
-      <section className="py-12 bg-gray-100">
+      <section className="py-12 bg-cream-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-8 text-blue-900">
+          <h2 className="text-3xl font-semibold text-center mb-8 text-red-900 font-serif">
             Our Key Programs
           </h2>
           <Slider {...settings}>
             {programs.map((program, index) => (
               <div key={index} className="px-3">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+                <div className="bg-cream-50 rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 border border-red-600">
                   <img
                     src={program.image}
                     alt={program.title}
                     className="w-full h-60 object-cover"
                   />
                   <div className="p-6">
-                    <h4 className="text-xl font-semibold text-blue-900 mb-3">
+                    <h4 className="text-xl font-semibold text-red-900 font-serif mb-3">
                       {program.title}
                     </h4>
-                    <p className="text-gray-700">{program.description.split(". ")[0]}.</p>
+                    <p className="text-gray-800 font-sans">{program.description.split(". ")[0]}.</p>
                   </div>
                 </div>
               </div>
@@ -120,9 +117,9 @@ const ServicesPrograms = () => {
       </section>
 
       {/* Search Programs by Location */}
-      <section className="py-12">
+      {/* <section className="py-12 bg-cream-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-8 text-blue-900">
+          <h2 className="text-3xl font-semibold text-center mb-8 text-red-900 font-serif">
             Find Programs by Location
           </h2>
           <div className="max-w-3xl mx-auto mb-8">
@@ -130,14 +127,14 @@ const ServicesPrograms = () => {
               <input
                 type="text"
                 placeholder="Type parish name..."
-                reading={searchQuery}
+                value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="flex-1 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-900"
+                className="flex-1 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-900 bg-cream-100 border border-red-600 font-sans"
               />
               <select
                 value={selectedVicariate}
                 onChange={(e) => setSelectedVicariate(e.target.value)}
-                className="px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-900"
+                className="px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-900 bg-cream-100 border border-red-600 font-sans"
               >
                 {vicariates.map((vicariate) => (
                   <option key={vicariate} value={vicariate}>
@@ -148,7 +145,7 @@ const ServicesPrograms = () => {
               <select
                 value={selectedDeanery}
                 onChange={(e) => setSelectedDeanery(e.target.value)}
-                className="px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-900"
+                className="px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-900 bg-cream-100 border border-red-600 font-sans"
               >
                 <option value="">All Deaneries</option>
                 {deaneries.map((deanery) => (
@@ -165,16 +162,79 @@ const ServicesPrograms = () => {
                 <Link
                   key={parish.id}
                   to={`/locations/${parish.id}`}
-                  className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow"
+                  className="bg-cream-50 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-red-600"
                 >
-                  <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                  <h3 className="text-xl font-semibold text-red-900 font-serif mb-2">
                     {parish.name}
                   </h3>
-                  <p className="text-gray-600">{parish.deanery}</p>
+                  <p className="text-gray-800 font-sans">{parish.deanery}</p>
                 </Link>
               ))
             ) : (
-              <p className="text-center text-gray-600 col-span-full">
+              <p className="text-center text-gray-800 font-sans col-span-full">
+                No parishes found.
+              </p>
+            )}
+          </div>
+        </div>
+      </section> */}
+      <section className="py-12 bg-cream-100">
+        <div className="container max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-semibold text-center mb-8 font-serif">
+            Search Parishes
+          </h2>
+          <div className="max-w-3xl mx-auto mb-8">
+            <div className="flex flex-col md:flex-row gap-4">
+              <input
+                type="text"
+                placeholder="Type parish name..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="flex-1 px-4 py-3 rounded-lg shadow-sm bg-cream-50 border border-cream-200 focus:outline-none focus:ring-2 focus:ring-red-800 text-gray-900 font-sans"
+              />
+              <select
+                value={selectedVicariate}
+                onChange={(e) => setSelectedVicariate(e.target.value)}
+                className="px-4 py-3 rounded-lg shadow-sm bg-cream-50 border border-cream-200 focus:outline-none focus:ring-2 focus:ring-red-800 text-gray-900 font-sans"
+              >
+                {vicariates.map((vicariate) => (
+                  <option key={vicariate} value={vicariate}>
+                    {vicariate}
+                  </option>
+                ))}
+              </select>
+              <select
+                value={selectedDeanery}
+                onChange={(e) => setSelectedDeanery(e.target.value)}
+                className="px-4 py-3 rounded-lg shadow-sm bg-cream-50 border border-cream-200 focus:outline-none focus:ring-2 focus:ring-red-800 text-gray-900 font-sans"
+              >
+                <option value="">All Deaneries</option>
+                {deaneries.map((deanery) => (
+                  <option key={deanery} value={deanery}>
+                    {deanery}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          {/* Parish List */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {filteredParishes.length > 0 ? (
+              filteredParishes.map((parish) => (
+                <Link
+                  key={parish.id}
+                  to={`/locations/${parish.id}`}
+                  className="bg-cream-100 rounded-xl shadow-lg p-6 hover:bg-cream-200 transition-shadow border-l-4 border-red-800"
+                >
+                  <h3 className="text-xl font-semibold font-serif mb-2">
+                    {parish.name}
+                  </h3>
+                  <p className="text-gray-600 font-sans">{parish.deanery}</p>
+                </Link>
+              ))
+            ) : (
+              <p className="text-center text-gray-600 col-span-full font-sans">
                 No parishes found.
               </p>
             )}
@@ -183,9 +243,9 @@ const ServicesPrograms = () => {
       </section>
 
       {/* Program Details */}
-      <section className="py-12 bg-gray-100">
+      <section className="py-12 bg-cream-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-8 text-blue-900">
+          <h2 className="text-3xl font-semibold text-center mb-8 text-red-900 font-serif">
             Program Details
           </h2>
           <div className="space-y-12">
@@ -200,14 +260,14 @@ const ServicesPrograms = () => {
                   <img
                     src={program.image}
                     alt={program.title}
-                    className="w-full h-64 object-cover rounded-lg shadow-md"
+                    className="w-full h-64 object-cover rounded-lg shadow-md border border-red-600"
                   />
                 </div>
                 <div className="w-full md:w-1/2">
-                  <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+                  <h3 className="text-2xl font-semibold text-red-900 font-serif mb-4">
                     {program.title}
                   </h3>
-                  <p className="text-gray-700">{program.description}</p>
+                  <p className="text-gray-800 font-sans">{program.description}</p>
                 </div>
               </div>
             ))}

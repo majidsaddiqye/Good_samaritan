@@ -27,7 +27,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-[#f3f1ec] text-[#0d1540] py-3 shadow-lg sticky top-0 z-50 border-b border-gray-200">
+    <header className="bg-[#f3f1ec] text-[#bd0f2f] py-3 shadow-lg sticky top-0 z-50 border-b border-gray-200">
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <NavLink 
@@ -38,13 +38,13 @@ const Header = () => {
             <img
               src={logo}
               alt="Logo"
-              className="h-16 w-16 rounded-full object-cover shadow-md "
+              className="h-16 w-16 rounded-full object-cover shadow-md"
             />
             <div className="absolute inset-0 rounded-full bg-white opacity-0 hover:opacity-10 transition-opacity duration-300"></div>
           </div>
           <div className="hidden md:block">
-            <h1 className="font-bold text-sm tracking-wider leading-tight">THE GOOD SAMARITAN</h1>
-            <p className="text-xs font-medium tracking-wide">SOCIETY CANADA</p>
+            <h1 className="font-bold text-sm tracking-wider leading-tight text-[#bd0f2f]">GOOD SAMARITANS</h1>
+            <p className="text-xs font-medium tracking-wide text-[#0d1540]">KAMPALA ARCHIDIOCESE</p>
           </div>
         </NavLink>
 
@@ -55,7 +55,7 @@ const Header = () => {
             className="p-2 rounded-md hover:bg-gray-200 transition-colors duration-300"
             aria-label="Toggle menu"
           >
-            {menuOpen ? <IoClose size={28} className="text-[#bd0f2f]" /> : <FaBars size={24} />}
+            {menuOpen ? <IoClose size={28} className="text-[#bd0f2f]" /> : <FaBars size={24} className="text-[#bd0f2f]" />}
           </button>
         </div>
 
@@ -73,7 +73,7 @@ const Header = () => {
                 <NavLink
                   key={item.name}
                   to={item.path}
-                  className="block px-6 py-3 text-sm hover:bg-gray-100 text-[#0d1540] hover:text-[#bd0f2f] transition-colors duration-200 border-l-2 border-transparent hover:border-[#bd0f2f]"
+                  className="block px-6 py-3 text-sm hover:bg-[#f3f1ec] text-[#0d1540] hover:text-[#bd0f2f] transition-colors duration-200 border-l-2 border-transparent hover:border-[#bd0f2f]"
                 >
                   {item.name}
                 </NavLink>
@@ -97,7 +97,7 @@ const Header = () => {
               to={item.path}
               className={`text-sm font-semibold px-5 py-2.5 transition-all duration-300 ${
                 item.special
-                  ? "bg-[#bd0f2f] text-white rounded-md hover:bg-red-800 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                  ? "bg-[#bd0f2f] text-white rounded-md hover:bg-[#a00a25] shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                   : "hover:text-[#bd0f2f] relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#bd0f2f] after:transition-all hover:after:w-full"
               }`}
             >
@@ -160,7 +160,7 @@ const Header = () => {
             onClick={() => setMenuOpen(false)}
             className={`block text-sm font-semibold px-4 py-3 transition-colors duration-200 ${
               item.special
-                ? "bg-[#bd0f2f] text-white rounded-md hover:bg-red-800 shadow-md mt-4"
+                ? "bg-[#bd0f2f] text-white rounded-md hover:bg-[#a00a25] shadow-md mt-4"
                 : "hover:text-[#bd0f2f] hover:bg-gray-100 rounded-md"
             }`}
           >

@@ -11,7 +11,7 @@ const ProgramsPreview = () => {
     return (
       <button
         onClick={onClick}
-        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-blue-100 p-3 rounded-full shadow-md text-blue-600 hover:text-blue-800 hover:shadow-lg transition-all duration-300 mr-2"
+        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[#f3f1ec] p-3 rounded-full shadow-md text-[#bd0f2f] hover:text-[#a00a25] hover:shadow-lg transition-all duration-300 mr-2"
       >
         <ChevronRight size={20} />
       </button>
@@ -23,7 +23,7 @@ const ProgramsPreview = () => {
     return (
       <button
         onClick={onClick}
-        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-blue-100 p-3 rounded-full shadow-md text-blue-600 hover:text-blue-800 hover:shadow-lg transition-all duration-300 ml-2"
+        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[#f3f1ec] p-3 rounded-full shadow-md text-[#bd0f2f] hover:text-[#a00a25] hover:shadow-lg transition-all duration-300 ml-2"
       >
         <ChevronLeft size={20} />
       </button>
@@ -57,7 +57,7 @@ const ProgramsPreview = () => {
       </div>
     ),
     customPaging: () => (
-      <div className="w-3 h-3 bg-blue-200 rounded-full hover:bg-blue-500 transition-all duration-300 mx-1"></div>
+      <div className="w-3 h-3 bg-[#f3f1ec] rounded-full hover:bg-[#bd0f2f] transition-all duration-300 mx-1"></div>
     ),
   };
 
@@ -80,9 +80,9 @@ const ProgramsPreview = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
+    <section className="py-16 bg-gradient-to-b from-[#f3f1ec] to-white">
       <div className="container mx-auto px-6">
-        <h3 className="text-3xl font-semibold text-center mb-10 text-blue-900">
+        <h3 className="text-3xl font-semibold text-center mb-10 text-[#bd0f2f]">
           Our Key Programs
         </h3>
         
@@ -97,14 +97,14 @@ const ProgramsPreview = () => {
                       alt={program.title}
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#793f49]/50 to-transparent"></div>
                   </div>
                   <div className="p-6">
-                    <h4 className="text-xl font-bold text-blue-800 mb-3">
+                    <h4 className="text-xl font-bold text-[#bd0f2f] mb-3">
                       {program.title}
                     </h4>
                     <p className="text-gray-700 mb-4">{program.description}</p>
-                    <button className="bg-blue-600 text-white px-4 py-2 rounded text-sm font-medium transition-colors duration-300 hover:bg-blue-700">
+                    <button className="bg-[#bd0f2f] text-white px-4 py-2 rounded text-sm font-medium transition-colors duration-300 hover:bg-[#a00a25]">
                       Learn More
                     </button>
                   </div>

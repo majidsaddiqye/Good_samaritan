@@ -39,19 +39,21 @@ const Locations = () => {
   return (
     <main className="flex-grow">
       {/* Hero Section */}
-      <section className="bg-blue-900 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Locations</h1>
-          <p className="text-xl max-w-2xl mx-auto">
+      <section className="bg-red-800 text-cream-100 py-16 bg-gradient-to-b from-cream-50/10 to-transparent">
+        <div className="container max-w-7xl mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold font-serif mb-4">
+            Our Locations
+          </h1>
+          <p className="text-xl max-w-2xl mx-auto font-sans">
             Find a Good Samaritans parish near you to join our mission of mercy.
           </p>
         </div>
       </section>
 
       {/* Search and Filter Section */}
-      <section className="py-12 bg-gray-100">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-8 text-blue-900">
+      <section className="py-12 bg-cream-100">
+        <div className="container max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-semibold text-center mb-8 font-serif">
             Search Parishes
           </h2>
           <div className="max-w-3xl mx-auto mb-8">
@@ -61,12 +63,12 @@ const Locations = () => {
                 placeholder="Type parish name..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="flex-1 px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-900"
+                className="flex-1 px-4 py-3 rounded-lg shadow-sm bg-cream-50 border border-cream-200 focus:outline-none focus:ring-2 focus:ring-red-800 text-gray-900 font-sans"
               />
               <select
                 value={selectedVicariate}
                 onChange={(e) => setSelectedVicariate(e.target.value)}
-                className="px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-900"
+                className="px-4 py-3 rounded-lg shadow-sm bg-cream-50 border border-cream-200 focus:outline-none focus:ring-2 focus:ring-red-800 text-gray-900 font-sans"
               >
                 {vicariates.map((vicariate) => (
                   <option key={vicariate} value={vicariate}>
@@ -77,7 +79,7 @@ const Locations = () => {
               <select
                 value={selectedDeanery}
                 onChange={(e) => setSelectedDeanery(e.target.value)}
-                className="px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-900"
+                className="px-4 py-3 rounded-lg shadow-sm bg-cream-50 border border-cream-200 focus:outline-none focus:ring-2 focus:ring-red-800 text-gray-900 font-sans"
               >
                 <option value="">All Deaneries</option>
                 {deaneries.map((deanery) => (
@@ -96,16 +98,16 @@ const Locations = () => {
                 <Link
                   key={parish.id}
                   to={`/locations/${parish.id}`}
-                  className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow"
+                  className="bg-cream-100 rounded-xl shadow-lg p-6 hover:bg-cream-200 transition-shadow border-l-4 border-red-800"
                 >
-                  <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                  <h3 className="text-xl font-semibold font-serif mb-2">
                     {parish.name}
                   </h3>
-                  <p className="text-gray-600">{parish.deanery}</p>
+                  <p className="text-gray-600 font-sans">{parish.deanery}</p>
                 </Link>
               ))
             ) : (
-              <p className="text-center text-gray-600 col-span-full">
+              <p className="text-center text-gray-600 col-span-full font-sans">
                 No parishes found.
               </p>
             )}

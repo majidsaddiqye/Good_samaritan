@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
-import church from "../assets/church.jpg"
-import paul from "../assets/paul.jpg"
-import sec from "../assets/secong.jpg"
+import church from "../assets/church.jpg";
+import paul from "../assets/paul.jpg";
+import sec from "../assets/secong.jpg";
 
 const Parish = () => {
   const { id } = useParams();
@@ -18,8 +18,7 @@ const Parish = () => {
         { name: "Jane Doe", need: "Food Supplies" },
         { name: "Peter Okello", need: "Medical Care" },
       ],
-      churchImage:
-        church,
+      churchImage: church,
     },
     {
       id: "buyege",
@@ -31,8 +30,7 @@ const Parish = () => {
         { name: "Sarah Namutebi", need: "Clothing" },
         { name: "David Kizito", need: "Shelter" },
       ],
-      churchImage:
-        church,
+      churchImage: church,
     },
     {
       id: "kabulamuliro",
@@ -40,11 +38,8 @@ const Parish = () => {
       deanery: "Entebbe Deanery",
       priest: "Rev. Fr. Michael Ssenfuma",
       chairperson: "Grace Nansubuga",
-      needyList: [
-        { name: "Anna Nankya", need: "Education Support" },
-      ],
-      churchImage:
-      church,
+      needyList: [{ name: "Anna Nankya", need: "Education Support" }],
+      churchImage: church,
     },
     {
       id: "kisubi",
@@ -56,8 +51,7 @@ const Parish = () => {
         { name: "John Mugisha", need: "Food Supplies" },
         { name: "Rose Nabbale", need: "Medical Care" },
       ],
-      churchImage:
-      church,
+      churchImage: church,
     },
     {
       id: "lweza",
@@ -66,8 +60,7 @@ const Parish = () => {
       priest: "Rev. Fr. Simon Lubega",
       chairperson: "Christine Namusoke",
       needyList: [],
-      churchImage:
-      church,
+      churchImage: church,
     },
     {
       id: "kiwamirembe",
@@ -75,11 +68,8 @@ const Parish = () => {
       deanery: "Entebbe Deanery",
       priest: "Rev. Fr. Francis Xavier",
       chairperson: "Agnes Namaganda",
-      needyList: [
-        { name: "Michael Ssempijja", need: "Clothing" },
-      ],
-      churchImage:
-      church,
+      needyList: [{ name: "Michael Ssempijja", need: "Clothing" }],
+      churchImage: church,
     },
     {
       id: "mpala",
@@ -87,11 +77,8 @@ const Parish = () => {
       deanery: "Entebbe Deanery",
       priest: "Rev. Fr. Joseph Nsubuga",
       chairperson: "Patrick Kalema",
-      needyList: [
-        { name: "Esther Nakimuli", need: "Food Supplies" },
-      ],
-      churchImage:
-      church,
+      needyList: [{ name: "Esther Nakimuli", need: "Food Supplies" }],
+      churchImage: church,
     },
     // Kibiri Deanery
     {
@@ -104,8 +91,7 @@ const Parish = () => {
         { name: "James Okot", need: "Medical Care" },
         { name: "Monica Nalubega", need: "Shelter" },
       ],
-      churchImage:
-      church,
+      churchImage: church,
     },
     {
       id: "masajja",
@@ -114,8 +100,7 @@ const Parish = () => {
       priest: "Rev. Fr. Martin Kigozi",
       chairperson: "Andrew Muwonge",
       needyList: [],
-      churchImage:
-      church,
+      churchImage: church,
     },
     {
       id: "namasuba",
@@ -123,11 +108,8 @@ const Parish = () => {
       deanery: "Kibiri Deanery",
       priest: "Rev. Fr. Lawrence Mukasa",
       chairperson: "Susan Nakalema",
-      needyList: [
-        { name: "Robert Kayanja", need: "Education Support" },
-      ],
-      churchImage:
-      church,
+      needyList: [{ name: "Robert Kayanja", need: "Education Support" }],
+      churchImage: church,
     },
     {
       id: "ndejje",
@@ -135,11 +117,8 @@ const Parish = () => {
       deanery: "Kibiri Deanery",
       priest: "Rev. Fr. Stephen Walugembe",
       chairperson: "Margaret Nanyonga",
-      needyList: [
-        { name: "Paul Ssemanda", need: "Food Supplies" },
-      ],
-      churchImage:
-      church,
+      needyList: [{ name: "Paul Ssemanda", need: "Food Supplies" }],
+      churchImage: church,
     },
     // Nabbingo Deanery
     {
@@ -152,8 +131,7 @@ const Parish = () => {
         { name: "Dorothy Nambi", need: "Clothing" },
         { name: "Samuel Kigo", need: "Medical Care" },
       ],
-      churchImage:
-      church,
+      churchImage: church,
     },
     {
       id: "bunnamwaya",
@@ -162,8 +140,7 @@ const Parish = () => {
       priest: "Rev. Fr. Edward Ssekandi",
       chairperson: "Theresa Namuddu",
       needyList: [],
-      churchImage:
-      church,
+      churchImage: church,
     },
     {
       id: "kyengera",
@@ -171,11 +148,8 @@ const Parish = () => {
       deanery: "Nabbingo Deanery",
       priest: "Rev. Fr. Pius Male",
       chairperson: "Henry Ssentongo",
-      needyList: [
-        { name: "Lillian Nakawunde", need: "Food Supplies" },
-      ],
-      churchImage:
-      church,
+      needyList: [{ name: "Lillian Nakawunde", need: "Food Supplies" }],
+      churchImage: church,
     },
     {
       id: "nabbingo",
@@ -183,11 +157,8 @@ const Parish = () => {
       deanery: "Nabbingo Deanery",
       priest: "Rev. Fr. Dominic Kintu",
       chairperson: "Beatrice Nakiganda",
-      needyList: [
-        { name: "Josephine Namusisi", need: "Shelter" },
-      ],
-      churchImage:
-      church,
+      needyList: [{ name: "Josephine Namusisi", need: "Shelter" }],
+      churchImage: church,
     },
     {
       id: "nakawuka",
@@ -199,8 +170,7 @@ const Parish = () => {
         { name: "Agnes Nansamba", need: "Education Support" },
         { name: "Vincent Kaggwa", need: "Clothing" },
       ],
-      churchImage:
-      church,
+      churchImage: church,
     },
   ];
 
@@ -216,73 +186,81 @@ const Parish = () => {
   return (
     <main className="flex-grow">
       {/* Hero Section */}
-      <section className="bg-blue-900 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{parish.name}</h1>
-          <p className="text-xl max-w-2xl mx-auto">{parish.deanery}</p>
+      <section className="bg-red-800 text-cream-100 py-16 bg-gradient-to-b from-cream-50/10 to-transparent">
+        <div className="container max-w-7xl mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold font-serif mb-4">
+            {parish.name}
+          </h1>
+          <p className="text-xl max-w-2xl mx-auto font-sans">{parish.deanery}</p>
         </div>
       </section>
 
       {/* Parish Details Section */}
-      <section className="py-12 bg-gray-100">
-        <div className="container mx-auto px-4">
+      <section className="py-12 bg-cream-100">
+        <div className="container max-w-7xl mx-auto px-4">
           {parish.id ? (
             <>
               {/* Leadership Team */}
               <div className="mb-12">
-                <h2 className="text-3xl font-semibold text-blue-900 mb-6 text-center">
+                <h2 className="text-3xl font-semibold mb-6 text-center font-serif">
                   Leadership Team
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                  <div className="bg-white rounded-xl shadow-lg p-6 text-center">
+                  <div className="bg-cream-100 rounded-xl shadow-lg p-6 text-center border border-red-800">
                     <img
                       src={paul}
                       alt="Parish Priest"
-                      className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+                      className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border border-cream-200"
                     />
-                    <h3 className="text-xl font-semibold text-blue-900">Parish Priest</h3>
-                    <p className="text-gray-700">{parish.priest}</p>
+                    <h3 className="text-xl font-semibold font-serif">
+                      Parish Priest
+                    </h3>
+                    <p className="text-gray-700 font-sans">{parish.priest}</p>
                   </div>
-                  <div className="bg-white rounded-xl shadow-lg p-6 text-center">
+                  <div className="bg-cream-100 rounded-xl shadow-lg p-6 text-center border border-red-800">
                     <img
                       src={sec}
                       alt="Good Samaritans Chairperson"
-                      className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+                      className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border border-cream-200"
                     />
-                    <h3 className="text-xl font-semibold text-blue-900">
+                    <h3 className="text-xl font-semibold font-serif">
                       Good Samaritans Chairperson
                     </h3>
-                    <p className="text-gray-700">{parish.chairperson}</p>
+                    <p className="text-gray-700 font-sans">{parish.chairperson}</p>
                   </div>
                 </div>
               </div>
 
               {/* Needy List */}
               <div className="mb-12">
-                <h2 className="text-3xl font-semibold text-blue-900 mb-6 text-center">
+                <h2 className="text-3xl font-semibold mb-6 text-center font-serif">
                   Needy List
                 </h2>
                 {parish.needyList.length > 0 ? (
                   <div className="overflow-x-auto">
-                    <table className="w-full max-w-3xl mx-auto bg-white rounded-xl shadow-lg">
+                    <table className="w-full max-w-3xl mx-auto bg-cream-100 rounded-xl shadow-lg">
                       <thead>
-                        <tr className="bg-blue-50">
-                          <th className="px-6 py-3 text-left text-blue-900">Name</th>
-                          <th className="px-6 py-3 text-left text-blue-900">Need</th>
+                        <tr className="bg-red-800 text-cream-100">
+                          <th className="px-6 py-3 text-left font-serif">Name</th>
+                          <th className="px-6 py-3 text-left font-serif">Need</th>
                         </tr>
                       </thead>
                       <tbody>
                         {parish.needyList.map((person, index) => (
-                          <tr key={index} className="border-t">
-                            <td className="px-6 py-4 text-gray-700">{person.name}</td>
-                            <td className="px-6 py-4 text-gray-700">{person.need}</td>
+                          <tr key={index} className="border-t border-cream-200">
+                            <td className="px-6 py-4 text-gray-700 font-sans">
+                              {person.name}
+                            </td>
+                            <td className="px-6 py-4 text-gray-700 font-sans">
+                              {person.need}
+                            </td>
                           </tr>
                         ))}
                       </tbody>
                     </table>
                   </div>
                 ) : (
-                  <p className="text-center text-gray-600">
+                  <p className="text-center text-gray-600 font-sans">
                     No current needs listed.
                   </p>
                 )}
@@ -290,38 +268,44 @@ const Parish = () => {
 
               {/* Church Image */}
               <div className="mb-12">
-                <h2 className="text-3xl font-semibold text-blue-900 mb-6 text-center">
+                <h2 className="text-3xl font-semibold mb-6 text-center font-serif">
                   Our Church
                 </h2>
                 <img
                   src={parish.churchImage}
                   alt={`${parish.name} Church`}
-                  className="w-full max-w-3xl mx-auto h-96 object-cover rounded-lg shadow-md"
+                  className="w-full max-w-3xl mx-auto h-96 object-cover rounded-lg shadow-md border border-cream-200"
                 />
               </div>
 
               {/* Contact Info */}
               <div className="mb-12">
-                <h2 className="text-3xl font-semibold text-blue-900 mb-6 text-center">
+                <h2 className="text-3xl font-semibold mb-6 text-center font-serif">
                   Contact Us
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                  <div className="bg-white rounded-xl shadow-lg p-6">
-                    <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                  <div className="bg-cream-100 rounded-xl shadow-lg p-6 border border-red-800">
+                    <h3 className="text-xl font-semibold font-serif mb-2">
                       Parish Good Samaritan Office
                     </h3>
-                    <p className="text-gray-700">Phone: +256 123 456 789</p>
-                    <p className="text-gray-700">Email: {parish.id}@goodsamaritans.org</p>
+                    <p className="text-gray-700 font-sans">
+                      Phone: +256 123 456 789
+                    </p>
+                    <p className="text-gray-700 font-sans">
+                      Email: {parish.id}@goodsamaritans.org
+                    </p>
                   </div>
-                  <div className="bg-white rounded-xl shadow-lg p-6">
-                    <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                  <div className="bg-cream-100 rounded-xl shadow-lg p-6 border border-red-800">
+                    <h3 className="text-xl font-semibold font-serif mb-2">
                       Archdiocese Good Samaritan Office
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 font-sans">
                       Lubaga Cathedral, Kampala Archdiocese
                     </p>
-                    <p className="text-gray-700">Phone: +256 987 654 321</p>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 font-sans">
+                      Phone: +256 987 654 321
+                    </p>
+                    <p className="text-gray-700 font-sans">
                       Email: goodsamaritanskampala@gmail.com
                     </p>
                   </div>
@@ -332,14 +316,16 @@ const Parish = () => {
               <div className="text-center">
                 <Link
                   to="/donate"
-                  className="bg-yellow-400 text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500"
+                  className="bg-red-800 text-cream-100 px-8 py-3 rounded-lg font-semibold hover:bg-red-900 transition-colors font-sans"
                 >
                   Donate Now
                 </Link>
               </div>
             </>
           ) : (
-            <p className="text-center text-gray-600 py-12">Parish not found.</p>
+            <p className="text-center text-gray-600 py-12 font-sans">
+              Parish not found.
+            </p>
           )}
         </div>
       </section>

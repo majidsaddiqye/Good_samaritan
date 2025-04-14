@@ -49,7 +49,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Placeholder for form submission logic
     alert("Thank you for your message!");
     setFormData({
       inquiryType: "",
@@ -69,83 +68,72 @@ const Contact = () => {
   return (
     <main className="flex-grow">
       {/* Hero Section */}
-      <section className="bg-blue-900 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl max-w-2xl mx-auto">
+      <section className="bg-red-800 text-cream-100 py-16 bg-gradient-to-b from-cream-50/10 to-transparent">
+        <div className="container max-w-7xl mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold font-serif mb-4">
+            Contact Us
+          </h1>
+          <p className="text-xl max-w-2xl mx-auto font-sans">
             Let us be good Samaritans by doing acts of mercy.
           </p>
         </div>
       </section>
 
       {/* Contact Info and Form Section */}
-      <section className="py-12 bg-gray-100">
-        <div className="container mx-auto px-4">
+      <section className="py-12 bg-cream-100">
+        <div className="container max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Info */}
             <div>
-              <h2 className="text-3xl font-semibold text-blue-900 mb-6">
+              <h2 className="text-3xl font-semibold mb-6 font-serif">
                 Get in Touch
               </h2>
-              <div className="space-y-6">
+              <div className="space-y-6 font-sans">
                 <div>
-                  <h3 className="text-xl font-semibold text-blue-900">
+                  <h3 className="text-xl font-semibold font-serif">
                     Head Office
                   </h3>
                   <p className="text-gray-700">
-                    Lubaga Cathedral, Kampala Archdiocese
+                    Located at The Museum Building Rubaga, Next to Rubaga
+                    Cathedral
                     <br />
-                    Next to Centenary Bank Building
+                    Phone: +256700115430
                     <br />
-                    Phone: +256 987 654 321
-                    <br />
-                    Email: goodsamaritanskampala@gmail.com
+                    Email: admin@goodsamaritanskampalaarchdiocese.org
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-blue-900">
+                  <h3 className="text-xl font-semibold font-serif">
                     General Inquiries
                   </h3>
                   <p className="text-gray-700">
-                    Phone: +256 123 456 789
-                    <br />
-                    Email: info@goodsamaritans.org
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-blue-900">
-                    Program Support
-                  </h3>
-                  <p className="text-gray-700">
-                    Phone: +256 456 789 123
-                    <br />
-                    Email: programs@goodsamaritans.org
+                    Email: admin@goodsamaritanskampalaarchdiocese.org
                   </p>
                 </div>
               </div>
               <div className="mt-6 flex items-center">
-                <div className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-semibold">
+                <div className="bg-yellow-400 text-red-800 px-4 py-2 rounded-full font-semibold font-sans">
                   Send Kudos – A Message of Gratitude
                 </div>
               </div>
             </div>
 
             {/* Contact Form */}
-            <div className="relative bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-                We’d Love to Hear From You
+            <div className="relative bg-cream-100 rounded-xl shadow-lg p-8 border-t-4 border-red-800">
+              <h3 className="text-2xl font-semibold mb-4 font-serif">
+                We'd Love to Hear From You
               </h3>
-              <p className="text-gray-700 mb-6">
+              <p className="text-gray-700 mb-6 font-sans">
                 We encourage you to bring forward your feedback as this provides us
                 the opportunity to improve.
               </p>
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4 font-sans">
                 <div>
                   <select
                     name="inquiryType"
                     value={formData.inquiryType}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
                     required
                   >
                     <option value="">I have a...</option>
@@ -161,7 +149,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Your Name*"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
                     required
                   />
                 </div>
@@ -170,7 +158,7 @@ const Contact = () => {
                     name="role"
                     value={formData.role}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
                     required
                   >
                     <option value="">I am a...</option>
@@ -186,7 +174,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Your Email*"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
                     required
                   />
                 </div>
@@ -197,7 +185,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Your daytime telephone number*"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
                     required
                   />
                 </div>
@@ -206,7 +194,7 @@ const Contact = () => {
                     name="program"
                     value={formData.program}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
                   >
                     <option value="">Care Home / Program Name</option>
                     <option value="prison-visits">Prison Visits</option>
@@ -221,18 +209,18 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Message*"
                     rows="4"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
                     required
                   />
                 </div>
                 <button
                   type="submit"
-                  className="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 w-full"
+                  className="bg-red-800 text-cream-100 px-6 py-3 rounded-lg font-semibold hover:bg-red-900 w-full transition-colors"
                 >
                   Send Message
                 </button>
               </form>
-              <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-purple-600 text-white rounded-full px-4 py-2 flex items-center gap-2">
+              <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-red-800 text-cream-100 rounded-full px-4 py-2 flex items-center gap-2">
                 <span className="text-xl">❤️</span>
                 <span className="font-semibold">WELL WISHES</span>
               </div>
@@ -242,15 +230,15 @@ const Contact = () => {
       </section>
 
       {/* Acts of Mercy Slider */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold text-center mb-8 text-blue-900">
+      <section className="py-12 bg-cream-100">
+        <div className="container max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-semibold text-center mb-8 font-serif">
             Acts of Mercy
           </h2>
           <Slider {...settings}>
             {allActs.map((act, index) => (
               <div key={index} className="px-2">
-                <div className="bg-blue-50 p-6 rounded-lg shadow-md text-center text-gray-700">
+                <div className="bg-cream-200 p-6 rounded-lg shadow-md text-center text-gray-700 border-b-2 border-red-800 hover:bg-cream-300 transition-colors font-sans">
                   {act}
                 </div>
               </div>
