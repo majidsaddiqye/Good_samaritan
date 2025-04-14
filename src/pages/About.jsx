@@ -23,9 +23,10 @@ const About = () => {
   return (
     <main className="flex-grow">
       {/* Hero Section */}
-      <section className="bg-red-800 text-cream-100 py-16 bg-gradient-to-b from-cream-50/10 to-transparent">
-        <div className="container max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-serif mb-4">
+      <section className="bg-red-800 text-white py-16 bg-gradient-to-b from-cream-50/10 to-transparent">
+        <div className="container max-w-7xl mx-auto px-4 text-center text-white">
+          <h1 className="text-4xl z-10 text-white md:text-5xl font-bold font-serif mb-4">
+            
             About Good Samaritans
           </h1>
           <p className="text-xl max-w-2xl mx-auto font-sans">

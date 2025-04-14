@@ -7,9 +7,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
 
 body {
-  @apply bg-white text-gray-700 font-sans;
+  @apply bg-white text-white font-sans;
 }
 
-h1, h2, h3, h4, h5, h6 {
+ h2, h3, h4, h5, h6 {
   @apply font-serif text-red-800;
+}
+h1{
+  @apply font-serif text-white;
 }

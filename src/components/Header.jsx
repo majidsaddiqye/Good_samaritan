@@ -43,7 +43,7 @@ const Header = () => {
             <div className="absolute inset-0 rounded-full bg-white opacity-0 hover:opacity-10 transition-opacity duration-300"></div>
           </div>
           <div className="hidden md:block">
-            <h1 className="font-bold text-sm tracking-wider leading-tight text-[#bd0f2f]">GOOD SAMARITANS</h1>
+            <h2 className="font-bold text-sm tracking-wider leading-tight text-[#bd0f2f]">GOOD SAMARITANS</h2>
             <p className="text-xs font-medium tracking-wide text-[#0d1540]">KAMPALA ARCHIDIOCESE</p>
           </div>
         </NavLink>
