@@ -22,8 +22,12 @@ const Header = () => {
   const aboutSubRoutes = [
     { name: "Leadership", path: "/about/leadership" },
     { name: "History", path: "/about/history" },
+    { name: "Mission", path: "/about/mission" },
+    { name: "Prayer", path: "/about/prayer" },
+    { name: "Anthem", path: "/about/anthem" },
     { name: "News", path: "/about/news" },
     { name: "Events", path: "/about/events" },
+    { name: "Workplan 2025", path: "/about/workplan-2025" },
   ];
 
   return (

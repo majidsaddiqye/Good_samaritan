@@ -1,6 +1,6 @@
 import president from "../assets/president.jpeg";
 import director from "../assets/director.jpg";
-import vice from "../assets/mam.jpg";
+import vice from "../assets/Matia.jpg";
 
 const MinistryExecutive = () => {
   const executives = [

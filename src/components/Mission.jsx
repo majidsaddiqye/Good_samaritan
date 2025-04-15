@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
-const Mission = () => {
+
+const MissionPreview = () => {
   return (
     <section className="relative overflow-hidden">
-
       <div className="container mx-auto px-6 py-16 relative z-10 flex">
         {/* Left red date column */}
         <div className="hidden md:flex flex-col items-center justify-center bg-[#bd0f2f] text-white py-8 px-6 text-center">
@@ -28,7 +28,7 @@ const Mission = () => {
                 Join Our Team
               </Link>
               <Link
-                to="/about"
+                to="/about/mission"
                 className="inline-block border-2 border-[#bd0f2f] text-[#bd0f2f] px-8 py-3 rounded-full font-semibold hover:bg-[#bd0f2f] hover:text-white transition-colors duration-300"
               >
                 Learn More
@@ -41,4 +41,4 @@ const Mission = () => {
   )
 }
 
-export default Mission
+export default MissionPreview

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import img1 from "../assets/img1.jpg";
 import img6 from "../assets/img6.jpg";
 import img3 from "../assets/img3.jpg";
+import charity from "../assets/charity.jpg";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -23,13 +24,13 @@ const Hero = () => {
 
   const slides = [
     {
-      image: img1,
+      image: charity,
       alt: "Community Impact 1",
       heading: "Resident and Family-Centred Care",
       description:
         "Our care is responsive to individual needs, values, beliefs, and preferences.",
       buttonText: "Learn More",
-      buttonLink: "/care",
+      buttonLink: "/donate",
     },
     {
       image: img6,
@@ -38,7 +39,7 @@ const Hero = () => {
       description:
         "We believe in treating every person with dignity and love, no matter the circumstance.",
       buttonText: "Learn More",
-      buttonLink: "/compassion",
+      buttonLink: "/donate",
     },
     {
       image: img3,
@@ -47,7 +48,7 @@ const Hero = () => {
       description:
         "We foster deep connections that enrich the lives of those we care for.",
       buttonText: "Learn More",
-      buttonLink: "/relationships",
+      buttonLink: "/donate",
     },
   ];
 

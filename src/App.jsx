@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Mission from "./components/Mission";
+import MissionPreview from "./components/Mission";
 import GoodSamaritan from "./components/GoodSamaritan";
 import Roles from "./components/Roles";
 import MinistryExecutive from "./components/MinistryExecutive";
@@ -18,6 +18,10 @@ import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
 import ServicesPrograms from "./pages/ServicesPrograms";
 import WaysToSupport from "./pages/WaysToSupport";
+import Workplan2025 from "./pages/Workplan2025";
+import Prayer from "./pages/Prayer";
+import Anthem from "./pages/Anthem";
+import Mission from "./pages/Mission";
 
 function App() {
   return (
@@ -31,7 +35,7 @@ function App() {
               element={
                 <>
                   <Hero />
-                  <Mission />
+                  <MissionPreview />
                   <GoodSamaritan />
                   <Roles />
                   <MinistryExecutive />
@@ -44,6 +48,10 @@ function App() {
             <Route path="/about/history" element={<History />} />
             <Route path="/about/news" element={<News />} />
             <Route path="/about/events" element={<Events />} />
+            <Route path="/about/workplan-2025" element={<Workplan2025 />} />
+            <Route path="/about/mission" element={<Mission />} />
+            <Route path="/about/prayer" element={<Prayer />} />
+            <Route path="/about/anthem" element={<Anthem />} />
             <Route path="/locations" element={<Locations />} />
             <Route path="/locations/:id" element={<Parish />} />
             <Route path="/services" element={<ServicesPrograms />} />
