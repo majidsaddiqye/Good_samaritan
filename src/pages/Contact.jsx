@@ -119,8 +119,8 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="relative bg-cream-100 rounded-xl shadow-lg p-8 border-t-4 border-red-800">
-              <h3 className="text-2xl font-semibold mb-4 font-serif">
+            <div className="relative bg-white text-gray-900 rounded-xl shadow-lg p-8 border-t-4 border-red-800">
+              <h3 className="text-2xl font-semibold mb-4 font-serif text-gray-900">
                 We'd Love to Hear From You
               </h3>
               <p className="text-gray-700 mb-6 font-sans">
@@ -133,7 +133,7 @@ const Contact = () => {
                     name="inquiryType"
                     value={formData.inquiryType}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white text-gray-900 focus:outline-none focus:border-red-800"
                     required
                   >
                     <option value="">I have a...</option>
@@ -149,7 +149,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Your Name*"
-                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white text-gray-900 focus:outline-none focus:border-red-800"
                     required
                   />
                 </div>
@@ -158,7 +158,7 @@ const Contact = () => {
                     name="role"
                     value={formData.role}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white text-gray-900 focus:outline-none focus:border-red-800"
                     required
                   >
                     <option value="">I am a...</option>
@@ -174,7 +174,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Your Email*"
-                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white text-gray-900 focus:outline-none focus:border-red-800"
                     required
                   />
                 </div>
@@ -185,7 +185,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Your daytime telephone number*"
-                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white text-gray-900 focus:outline-none focus:border-red-800"
                     required
                   />
                 </div>
@@ -194,12 +194,12 @@ const Contact = () => {
                     name="program"
                     value={formData.program}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white text-gray-900 focus:outline-none focus:border-red-800"
                   >
                     <option value="">Care Home / Program Name</option>
                     <option value="prison-visits">Prison Visits</option>
-                    <option value="jubilee-pilgrimage">Jubilee Pilgrimage</option>
-                    <option value="needy-home-visits">Needy Home Visits</option>
+                    <option value="home-visits">Home Visits</option>
+                    <option value="pilgrimage">Pilgrimage</option>
                   </select>
                 </div>
                 <div>
@@ -207,20 +207,20 @@ const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Message*"
+                    placeholder="Your Message*"
                     rows="4"
-                    className="w-full px-4 py-3 rounded-lg border border-cream-200 bg-cream-50 focus:outline-none focus:ring-2 focus:ring-red-800"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white text-gray-900 focus:outline-none focus:border-red-800"
                     required
-                  />
+                  ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="bg-red-800 text-cream-100 px-6 py-3 rounded-lg font-semibold hover:bg-red-900 w-full transition-colors"
+                  className="w-full bg-red-800 text-white py-3 px-6 rounded-lg hover:bg-red-700 transition-colors duration-300 font-semibold"
                 >
                   Send Message
                 </button>
               </form>
-              <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-red-800 text-cream-100 rounded-full px-4 py-2 flex items-center gap-2">
+              <div className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-red-800 text-black rounded-full px-4 py-2 flex items-center gap-2">
                 <span className="text-xl">❤️</span>
                 <span className="font-semibold">WELL WISHES</span>
               </div>
