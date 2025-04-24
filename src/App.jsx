@@ -1,3 +1,4 @@
+/*
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -63,6 +64,26 @@ function App() {
         <Footer />
       </div>
     </Router>
+  );
+}
+
+export default App;
+*/
+
+function App() {
+  return (
+    <div style={{ 
+      display: 'flex', 
+      justifyContent: 'center', 
+      alignItems: 'center', 
+      height: '100vh',
+      backgroundColor: '#f8f9fa',
+      color: '#dc3545',
+      fontSize: '2rem',
+      fontWeight: 'bold'
+    }}>
+      Access Denied
+    </div>
   );
 }
 
